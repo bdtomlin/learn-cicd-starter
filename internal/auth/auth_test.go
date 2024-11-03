@@ -12,7 +12,7 @@ func TestGetAPIKey(t *testing.T) {
 		err    error
 	}{
 		{
-			header: http.Header{"Authorization": []string{"ApiKey XXsomeapikey"}},
+			header: http.Header{"Authorization": []string{"ApiKey someapikey"}},
 			want:   "someapikey",
 			err:    nil,
 		},
